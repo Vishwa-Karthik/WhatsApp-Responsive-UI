@@ -9,44 +9,45 @@ class ContactList extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(top: 10),
       child: ListView.builder(
-          shrinkWrap: true,
-          itemCount: info.length,
-          itemBuilder: ((context, index) {
-            return InkWell(
-              onTap: () {},
-              child: ListTile(
-                //* Image
-                leading: CircleAvatar(
-                  radius: 26,
-                  backgroundImage: NetworkImage(
-                    info[index]['profilePic'].toString(),
-                  ),
-                ),
-
-                //* Title Name
-                title: Text(
-                  info[index]['name'].toString(),
-                  style: const TextStyle(
-                    fontSize: 18,
-                  ),
-                ),
-
-                //* Message
-                subtitle: Text(
-                  info[index]['message'].toString(),
-                  style: const TextStyle(
-                    fontSize: 15,
-                  ),
-                ),
-
-                //* Time
-                trailing: Text(
-                  info[index]['time'].toString(),
-                  style: const TextStyle(fontSize: 13, color: Colors.grey),
+        shrinkWrap: true,
+        itemCount: info.length,
+        itemBuilder: ((context, index) {
+          return InkWell(
+            onTap: () {},
+            child: ListTile(
+              //* Image
+              leading: CircleAvatar(
+                radius: 26,
+                backgroundImage: NetworkImage(
+                  info[index]['profilePic'].toString(),
                 ),
               ),
-            );
-          })),
+
+              //* Title Name
+              title: Text(
+                info[index]['name'].toString(),
+                style: const TextStyle(
+                  fontSize: 18,
+                ),
+              ),
+
+              //* Message
+              subtitle: Text(
+                info[index]['message'].toString(),
+                style: const TextStyle(
+                  fontSize: 15,
+                ),
+              ),
+
+              //* Time
+              trailing: Text(
+                info[index]['time'].toString(),
+                style: const TextStyle(fontSize: 13, color: Colors.grey),
+              ),
+            ),
+          );
+        }),
+      ),
     );
   }
 }
