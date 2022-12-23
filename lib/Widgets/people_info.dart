@@ -4,7 +4,7 @@ const info = [
     'message': 'Hey, how are you doing?',
     'time': '3:53 pm',
     'profilePic':
-        'https://upload.wikimedia.org/wikipedia/commons/8/85/Elon_Musk_Royal_Society_%28crop1%29.jpg',
+        'https://i.pinimg.com/736x/79/66/f4/7966f40c74515adad5be572a660a0415.jpg',
   },
   {
     'name': 'John Doe',

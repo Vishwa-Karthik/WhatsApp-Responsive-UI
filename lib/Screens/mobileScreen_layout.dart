@@ -14,90 +14,88 @@ class MobileScreenLayout extends StatelessWidget {
     // ignore: prefer_const_constructors
     return DefaultTabController(
       length: 4,
-      child: SafeArea(
-        child: Scaffold(
-          appBar: AppBar(
-            title: const Text("WhatsApp"),
+      child: Scaffold(
+        appBar: AppBar(
+          title: const Text("WhatsApp"),
 
-            //* elevation shadow
-            elevation: 0,
+          //* elevation shadow
+          elevation: 0,
 
-            //* App Bar Color Background
-            backgroundColor: appBarColor,
+          //* App Bar Color Background
+          backgroundColor: appBarColor,
 
-            //* Corner Action Bar Items
-            actions: [
-              IconButton(
-                onPressed: () {},
-                icon: const Icon(Icons.camera_alt),
-              ),
-              IconButton(
-                onPressed: () {},
-                icon: const Icon(Icons.search),
-              ),
-              PopupMenuButton(
-                  color: backgroundColor,
-                  icon: const Icon(Icons.more_vert),
-                  itemBuilder: (context) => [
-                        const PopupMenuItem(
-                          value: 1,
-                          child: Text("New Group"),
-                        ),
-                        const PopupMenuItem(
-                          value: 2,
-                          child: Text("New Broadcast"),
-                        ),
-                        const PopupMenuItem(
-                          value: 3,
-                          child: Text("Linked Devices"),
-                        ),
-                        const PopupMenuItem(
-                          value: 4,
-                          child: Text("Starred Messages"),
-                        ),
-                        const PopupMenuItem(
-                          value: 4,
-                          child: Text("Payments"),
-                        ),
-                        const PopupMenuItem(
-                          value: 4,
-                          child: Text("Settings"),
-                        ),
-                      ])
-            ],
-
-            //* Bottom Sliding Bars
-            bottom: const TabBar(
-              indicatorColor: tabColor,
-              indicatorWeight: 4,
-              labelColor: Colors.white,
-              unselectedLabelColor: Colors.grey,
-              labelStyle: TextStyle(
-                fontWeight: FontWeight.bold,
-              ),
-              tabs: [
-                Tab(
-                  child: Icon(Icons.group),
-                ),
-                Tab(
-                  child: Text("CHATS"),
-                ),
-                Tab(
-                  child: Text("STATUS"),
-                ),
-                Tab(
-                  child: Text("CALLS"),
-                ),
-              ],
+          //* Corner Action Bar Items
+          actions: [
+            IconButton(
+              onPressed: () {},
+              icon: const Icon(Icons.camera_alt),
             ),
+            IconButton(
+              onPressed: () {},
+              icon: const Icon(Icons.search),
+            ),
+            PopupMenuButton(
+                color: backgroundColor,
+                icon: const Icon(Icons.more_vert),
+                itemBuilder: (context) => [
+                      const PopupMenuItem(
+                        value: 1,
+                        child: Text("New Group"),
+                      ),
+                      const PopupMenuItem(
+                        value: 2,
+                        child: Text("New Broadcast"),
+                      ),
+                      const PopupMenuItem(
+                        value: 3,
+                        child: Text("Linked Devices"),
+                      ),
+                      const PopupMenuItem(
+                        value: 4,
+                        child: Text("Starred Messages"),
+                      ),
+                      const PopupMenuItem(
+                        value: 4,
+                        child: Text("Payments"),
+                      ),
+                      const PopupMenuItem(
+                        value: 4,
+                        child: Text("Settings"),
+                      ),
+                    ])
+          ],
+
+          //* Bottom Sliding Bars
+          bottom: const TabBar(
+            indicatorColor: tabColor,
+            indicatorWeight: 4,
+            labelColor: Colors.white,
+            unselectedLabelColor: Colors.grey,
+            labelStyle: TextStyle(
+              fontWeight: FontWeight.bold,
+            ),
+            tabs: [
+              Tab(
+                child: Icon(Icons.group),
+              ),
+              Tab(
+                child: Text("CHATS"),
+              ),
+              Tab(
+                child: Text("STATUS"),
+              ),
+              Tab(
+                child: Text("CALLS"),
+              ),
+            ],
           ),
-          body: const TabBarView(children: [
-            MyCommunityPage(),
-            MyChatPage(),
-            MyStatusPage(),
-            MyCallsPage(),
-          ]),
         ),
+        body: const TabBarView(children: [
+          MyCommunityPage(),
+          MyChatPage(),
+          MyStatusPage(),
+          MyCallsPage(),
+        ]),
       ),
     );
   }
