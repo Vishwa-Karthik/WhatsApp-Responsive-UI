@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp_responsive_ui/Widgets/chat_list.dart';
 import 'package:whatsapp_responsive_ui/constants.dart';
 
 import '../Widgets/people_info.dart';
@@ -62,6 +63,62 @@ class MobileChatScreen extends StatelessWidget {
                 child: Text("More   ->"),
               ),
             ],
+          ),
+        ],
+      ),
+      body: Column(
+        children: [
+          //* chat list
+          const Expanded(
+            child: ChatList(),
+          ),
+
+          //* text input
+          TextField(
+            decoration: InputDecoration(
+              fillColor: mobileChatBoxColor,
+              prefixIcon: const Padding(
+                padding: EdgeInsets.symmetric(horizontal: 20.0),
+                child: Icon(
+                  Icons.emoji_emotions,
+                  color: Colors.grey,
+                ),
+              ),
+              suffixIcon: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: const [
+                    Icon(
+                      Icons.camera_alt,
+                      color: Colors.grey,
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Icon(
+                      Icons.attach_file,
+                      color: Colors.grey,
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Icon(
+                      Icons.money,
+                      color: Colors.grey,
+                    ),
+                  ],
+                ),
+              ),
+              hintText: 'Type a message',
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(20),
+                borderSide: const BorderSide(
+                  width: 0,
+                  style: BorderStyle.none,
+                ),
+              ),
+            ),
           ),
         ],
       ),
