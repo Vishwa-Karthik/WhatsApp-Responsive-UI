@@ -35,34 +35,35 @@ class MobileScreenLayout extends StatelessWidget {
               icon: const Icon(Icons.search),
             ),
             PopupMenuButton(
-                color: backgroundColor,
-                icon: const Icon(Icons.more_vert),
-                itemBuilder: (context) => [
-                      const PopupMenuItem(
-                        value: 1,
-                        child: Text("New Group"),
-                      ),
-                      const PopupMenuItem(
-                        value: 2,
-                        child: Text("New Broadcast"),
-                      ),
-                      const PopupMenuItem(
-                        value: 3,
-                        child: Text("Linked Devices"),
-                      ),
-                      const PopupMenuItem(
-                        value: 4,
-                        child: Text("Starred Messages"),
-                      ),
-                      const PopupMenuItem(
-                        value: 4,
-                        child: Text("Payments"),
-                      ),
-                      const PopupMenuItem(
-                        value: 4,
-                        child: Text("Settings"),
-                      ),
-                    ])
+              color: backgroundColor,
+              icon: const Icon(Icons.more_vert),
+              itemBuilder: (context) => [
+                const PopupMenuItem(
+                  value: 1,
+                  child: Text("New Group"),
+                ),
+                const PopupMenuItem(
+                  value: 2,
+                  child: Text("New Broadcast"),
+                ),
+                const PopupMenuItem(
+                  value: 3,
+                  child: Text("Linked Devices"),
+                ),
+                const PopupMenuItem(
+                  value: 4,
+                  child: Text("Starred Messages"),
+                ),
+                const PopupMenuItem(
+                  value: 4,
+                  child: Text("Payments"),
+                ),
+                const PopupMenuItem(
+                  value: 4,
+                  child: Text("Settings"),
+                ),
+              ],
+            ),
           ],
 
           //* Bottom Sliding Bars
@@ -90,6 +91,17 @@ class MobileScreenLayout extends StatelessWidget {
             ],
           ),
         ),
+
+        //* floating action bar
+        floatingActionButton: FloatingActionButton(
+          onPressed: () {},
+          backgroundColor: tabColor,
+          child: const Icon(
+            Icons.chat,
+            color: Colors.white,
+          ),
+        ),
+
         body: const TabBarView(children: [
           MyCommunityPage(),
           MyChatPage(),
