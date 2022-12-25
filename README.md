@@ -1,16 +1,27 @@
-# whatsapp_responsive_ui
+# Whatsapp Responsivve UI
 
-A new Flutter project.
+A simple flutter responsive whatsapp UI Design clone for Android/iOS and Web.
 
 ## Getting Started
+```bash
+flutter pub get
+```
 
-This project is a starting point for a Flutter application.
+## Results
+<p>
+<img src="https://raw.githubusercontent.com/Vishwa-Karthik/WhatsApp-Responsive-UI/master/Results/img1.png" width="200" height="400" />
+&nbsp; &nbsp; &nbsp;
+<img src="https://raw.githubusercontent.com/Vishwa-Karthik/WhatsApp-Responsive-UI/master/Results/img2.png" width="200" height="400" />
+</p>
 
-A few resources to get you started if this is your first Flutter project:
+<p>
+<img src="https://raw.githubusercontent.com/Vishwa-Karthik/WhatsApp-Responsive-UI/master/Results/img3.png" width="200" height="400" />
+&nbsp; &nbsp; &nbsp;
+<img src="https://raw.githubusercontent.com/Vishwa-Karthik/WhatsApp-Responsive-UI/master/Results/img4.png" width="200" height="400" />
+</p>
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+<img src="https://raw.githubusercontent.com/Vishwa-Karthik/WhatsApp-Responsive-UI/master/Results/img5.jpg" width="1000" height="500" />
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## References
+1. Google Fonts
+2. Flutter Launcher Icons
