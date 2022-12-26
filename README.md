@@ -7,6 +7,10 @@ A simple flutter responsive whatsapp UI Design clone for Android/iOS and Web.
 flutter pub get
 ```
 
+## Preview of the Web Version
+
+Website: https://playful-malabi-cf0ec0.netlify.app/#/
+
 ## Results
 <p>
 <img src="https://raw.githubusercontent.com/Vishwa-Karthik/WhatsApp-Responsive-UI/master/Results/img1.png" width="200" height="400" />
