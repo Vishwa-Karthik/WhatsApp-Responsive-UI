@@ -14,7 +14,7 @@ const info = [
         'https://www.socialketchup.in/wp-content/uploads/2020/05/fi-vill-JOHN-DOE.jpg',
   },
   {
-    'name': 'Naman Ranawat',
+    'name': 'Yashas B N',
     'message': 'Hello, I want to sleep.',
     'time': '1:03 pm',
     'profilePic':
@@ -35,15 +35,15 @@ const info = [
         'https://uploads.dailydot.com/2018/10/olli-the-polite-cat.jpg?auto=compress%2Cformat&ixlib=php-3.3.0',
   },
   {
-    'name': 'Jurica',
+    'name': 'Vyshnavi',
     'message': 'Yo!!!!! Long time, no see!?',
     'time': '9:53 am',
     'profilePic':
         'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60',
   },
   {
-    'name': 'Albert Dera',
-    'message': 'Am I fat?',
+    'name': 'Shashwathi',
+    'message': 'Am I short?',
     'time': '7:25 am',
     'profilePic':
         'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60',
@@ -83,17 +83,17 @@ const messages = [
   {"isMe": true, "text": "Obviously, say", "time": "11:03 am"},
   {
     "isMe": false,
-    "text": "haha I wanted you to check out my new channel ^^",
+    "text": "haha I wanted you to check out my new project ^^",
     "time": "11:04 am"
   },
   {
     "isMe": true,
-    "text": " Sure, what is the channel name?",
+    "text": " Sure, what is your github profile?",
     "time": "11:05 am"
   },
   {
     "isMe": false,
-    "text": "Rivaan Ranawat",
+    "text": "Vishwa Karthik",
     "time": "11:06 am",
   },
   {
@@ -102,7 +102,7 @@ const messages = [
     "time": "11:15 am",
   },
   {"isMe": false, "text": "Thanks bro!", "time": "11:17 am"},
-  {"isMe": false, "text": "Did you subscribe?", "time": "11:16 am"},
+  {"isMe": false, "text": "So, do you like it?", "time": "11:16 am"},
   {"isMe": true, "text": "Yes, surely bro!", "time": "11:17 am"},
   {
     "isMe": false,
